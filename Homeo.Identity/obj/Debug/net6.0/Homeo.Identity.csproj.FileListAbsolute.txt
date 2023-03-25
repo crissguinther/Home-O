@@ -1,0 +1,14 @@
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.csproj.AssemblyReference.cache
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.AssemblyInfoInputs.cache
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.AssemblyInfo.cs
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.csproj.CoreCompileInputs.cache
+D:\Estudos\C#\Homeo\Homeo.Identity\bin\Debug\net6.0\Homeo.Identity.deps.json
+D:\Estudos\C#\Homeo\Homeo.Identity\bin\Debug\net6.0\Homeo.Identity.dll
+D:\Estudos\C#\Homeo\Homeo.Identity\bin\Debug\net6.0\Homeo.Identity.pdb
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.dll
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\refint\Homeo.Identity.dll
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.pdb
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\ref\Homeo.Identity.dll
+D:\Estudos\C#\Homeo\Homeo.Identity\bin\Debug\net6.0\Homeo.Identity.runtimeconfig.json
+D:\Estudos\C#\Homeo\Homeo.Identity\obj\Debug\net6.0\Homeo.Identity.genruntimeconfig.cache
