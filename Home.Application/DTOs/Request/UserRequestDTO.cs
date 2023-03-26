@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace Homeo.DTOs.Request {
-    public class AddUserRequestDTO {
+    public class UserRequestDTO {
         [Required]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "User name must be between 3 and 50 characters long")]
         public string Name { get; set; }
@@ -12,7 +12,7 @@ namespace Homeo.DTOs.Request {
         public string Email { get; set; }
 
         [Required]
-        [StringLength(8, MinimumLength = 36, ErrorMessage = "User password must be between 8 and 36 characters long")]
+        [StringLength(36, MinimumLength = 8, ErrorMessage = "User password must be between 8 and 36 characters long")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
@@ -23,9 +23,9 @@ namespace Homeo.DTOs.Request {
         [Range(0, 2, ErrorMessage = "The account type is invalid")]
         public int AccountType { get; set; }
 
-        public AddUserRequestDTO() { }
+        public UserRequestDTO() { }
 
-        public AddUserRequestDTO(string name, string email, string password, int accountType) {
+        public UserRequestDTO(string name, string email, string password, int accountType) {
             Name = name;
             Email = email;
             Password = password;

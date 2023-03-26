@@ -1,7 +1,6 @@
-using AutoMapper;
+using Homeo.Api.IoC;
 using Homeo.IoC;
 using Homeo.Utils;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Define the environment variables
@@ -10,6 +9,7 @@ LoadEnvironmentVariables.Load(path);
 
 builder.AddServices();
 builder.AddApplicationContexts();
+builder.RegisterRepositories();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,6 +20,7 @@ if (app.Environment.IsDevelopment()) {
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

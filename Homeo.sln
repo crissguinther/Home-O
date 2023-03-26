@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homeo.Application", "Home.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homeo.Domain", "Homeo.Domain\Homeo.Domain.csproj", "{F82E1A53-BD1C-43D3-A8F3-5072B24B6090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homeo.Tests", "Homeo.Tests\Homeo.Tests.csproj", "{E89A1B55-3380-481F-864E-C30D19040C4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homeo.Tests", "Homeo.Tests\Homeo.Tests.csproj", "{E89A1B55-3380-481F-864E-C30D19040C4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

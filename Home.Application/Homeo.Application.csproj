@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Homeo.Data\Homeo.Data.csproj" />
-    <ProjectReference Include="..\Homeo\Homeo.Api.csproj" />
+    <ProjectReference Include="..\Homeo.Identity\Homeo.Identity.csproj" />
   </ItemGroup>
 
   <ItemGroup>
