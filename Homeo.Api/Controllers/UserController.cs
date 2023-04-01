@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Homeo.Application.Enums;
 using Homeo.Application.Interfaces;
 using Homeo.Application.Repositories;
 using Homeo.Data.Interfaces;
@@ -26,11 +27,20 @@ namespace Homeo.Api.Controllers {
         [HttpPost]
         [Route("post")]
         [AllowAnonymous]
-        public async Task<IActionResult> RegisterUser([FromBody] UserRequestDTO request) {
-            try {
-                if (request.Password != request.PasswordConfirmation) return BadRequest("Passwords does not match");
-                if (_userRepository.FindUserByEmail(request.Email).Result != null) return BadRequest("Username is already in use");
+        public async Task<IActionResult> RegisterUser([FromBody] UserRequestDTO request) {            
+            if (!ModelState.IsValid) {
+                var modelStateErrors = ModelState.SelectMany(ms => ms.Value.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
 
+                var errorResponse = string.Join(',', modelStateErrors);
+                return BadRequest(errorResponse);
+            }
+
+            if (request.Password != request.PasswordConfirmation) return BadRequest(ResponseErrorsEnum.MismatchPassword);
+            if (_userRepository.FindUserByEmail(request.Email).Result != null) return BadRequest(ResponseErrorsEnum.UsernameAlreadyInUse);
+
+            try {
                 var mappedUser = _mapper.Map<User>(request);
                 var createdUser = await _userRepository.AddUser(mappedUser, request.Password);
 
