@@ -53,6 +53,11 @@ namespace Homeo.Api.Controllers {
 
                     _uok.Commit();
                     return Created("api/users/post", response);
+                } else {
+                    var errors = createdUser.Errors.Select(e => e.Description);
+                    var errorMessage = string.Join(',', errors);
+
+                    return BadRequest(errorMessage);
                 }
 
                 return StatusCode((int) HttpStatusCode.InternalServerError);
