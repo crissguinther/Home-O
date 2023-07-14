@@ -1,7 +1,9 @@
-﻿using Homeo.Identity.Data;
+﻿using Homeo.Data.Data;
+using Homeo.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Homeo.IoC {
+namespace Homeo.IoC
+{
     public static class AddContexts {
         /// <summary>
         /// Adds the application database contexts into the web application.
@@ -16,6 +18,10 @@ namespace Homeo.IoC {
 
             if (string.IsNullOrEmpty(connectionString))
                 throw new Exception("Connection string was not set");
+
+            builder.Services.AddDbContext<HomeoDataContext>(options =>
+                options.UseSqlServer(connectionString)
+            );
 
             builder.Services.AddDbContext<IdentityDataContext>(options =>
                 options.UseSqlServer(connectionString)
