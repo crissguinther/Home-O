@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using Homeo.Application.Enums;
 using Homeo.Application.Interfaces;
-using Homeo.Application.Repositories;
-using Homeo.Data.Interfaces;
-using Homeo.Data.UnitOfWork;
+using Homeo.DAL.Interfaces;
 using Homeo.Domain;
 using Homeo.DTOs.Request;
 using Homeo.DTOs.Response;
@@ -11,7 +9,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace Homeo.Api.Controllers {
+namespace Homeo.Api.Controllers
+{
     [Route("api/users/")]
     public class UserController : Controller {
         private readonly IUserRepository _userRepository;

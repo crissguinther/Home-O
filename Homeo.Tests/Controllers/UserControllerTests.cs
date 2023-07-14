@@ -4,8 +4,9 @@ using FluentAssertions;
 using Homeo.Api.Controllers;
 using Homeo.Application.Enums;
 using Homeo.Application.Interfaces;
-using Homeo.Data.Interfaces;
+using Homeo.DAL.Interfaces;
 using Homeo.Domain;
+using Homeo.Domain.Enums;
 using Homeo.DTOs.Request;
 using Homeo.DTOs.Response;
 using Microsoft.AspNetCore.Identity;
@@ -13,7 +14,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using Xunit;
 
-namespace Homeo.Tests.Controllers {
+namespace Homeo.Tests.Controllers
+{
     public class UserControllerTests {
         private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitOfWork;
@@ -35,7 +37,7 @@ namespace Homeo.Tests.Controllers {
             user.Email = "email@email.com";
             user.Password = "@ABc12aeioC!";
             user.PasswordConfirmation = "@ABc12aeioC!";
-            user.AccountType = 2;
+            user.AccountType = AccountTypeEnum.Both;
             user.Name = "Jane Doe";
 
             A.CallTo(() => _userRepository.FindUserByEmail(A<string>._)).Returns(Task.FromResult<User>(null));

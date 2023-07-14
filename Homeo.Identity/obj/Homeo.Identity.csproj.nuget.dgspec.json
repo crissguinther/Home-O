@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Estudos\\C#\\Homeo\\Homeo.Identity\\Homeo.Identity.csproj": {}
+    "D:\\Projetos\\home_o\\backend\\Homeo.Identity\\Homeo.Identity.csproj": {}
   },
   "projects": {
-    "D:\\Estudos\\C#\\Homeo\\Homeo.Domain\\Homeo.Domain.csproj": {
+    "D:\\Projetos\\home_o\\backend\\Homeo.Domain\\Homeo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudos\\C#\\Homeo\\Homeo.Domain\\Homeo.Domain.csproj",
+        "projectUniqueName": "D:\\Projetos\\home_o\\backend\\Homeo.Domain\\Homeo.Domain.csproj",
         "projectName": "Homeo.Domain",
-        "projectPath": "D:\\Estudos\\C#\\Homeo\\Homeo.Domain\\Homeo.Domain.csproj",
+        "projectPath": "D:\\Projetos\\home_o\\backend\\Homeo.Domain\\Homeo.Domain.csproj",
         "packagesPath": "C:\\Users\\Criss\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudos\\C#\\Homeo\\Homeo.Domain\\obj\\",
+        "outputPath": "D:\\Projetos\\home_o\\backend\\Homeo.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +41,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -50,11 +50,11 @@
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[12.0.0, )"
+              "version": "[12.0.1, )"
             },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[7.0.9, )"
             }
           },
           "imports": [
@@ -73,18 +73,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Estudos\\C#\\Homeo\\Homeo.Identity\\Homeo.Identity.csproj": {
+    "D:\\Projetos\\home_o\\backend\\Homeo.Identity\\Homeo.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudos\\C#\\Homeo\\Homeo.Identity\\Homeo.Identity.csproj",
+        "projectUniqueName": "D:\\Projetos\\home_o\\backend\\Homeo.Identity\\Homeo.Identity.csproj",
         "projectName": "Homeo.Identity",
-        "projectPath": "D:\\Estudos\\C#\\Homeo\\Homeo.Identity\\Homeo.Identity.csproj",
+        "projectPath": "D:\\Projetos\\home_o\\backend\\Homeo.Identity\\Homeo.Identity.csproj",
         "packagesPath": "C:\\Users\\Criss\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudos\\C#\\Homeo\\Homeo.Identity\\obj\\",
+        "outputPath": "D:\\Projetos\\home_o\\backend\\Homeo.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -95,18 +95,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Estudos\\C#\\Homeo\\Homeo.Domain\\Homeo.Domain.csproj": {
-                "projectPath": "D:\\Estudos\\C#\\Homeo\\Homeo.Domain\\Homeo.Domain.csproj"
+              "D:\\Projetos\\home_o\\backend\\Homeo.Domain\\Homeo.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\home_o\\backend\\Homeo.Domain\\Homeo.Domain.csproj"
               }
             }
           }
@@ -118,8 +118,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -127,43 +127,33 @@
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[12.0.0, )"
+              "version": "[12.0.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.15, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.15, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[7.0.9, )"
             }
           },
           "imports": [
@@ -182,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

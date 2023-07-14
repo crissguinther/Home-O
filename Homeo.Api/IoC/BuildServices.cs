@@ -1,11 +1,12 @@
 ﻿using Homeo.Application.Profiles;
-using Homeo.Data.Interfaces;
-using Homeo.Data.UnitOfWork;
+using Homeo.DAL.Interfaces;
+using Homeo.DAL.UnitOfWork;
 using Homeo.Domain;
 using Homeo.Identity.Data;
 using System.Reflection;
 
-namespace Homeo.IoC {
+namespace Homeo.IoC
+{
     public static class BuildServices {
         /// <summary>
         /// An extension method used for IoC. Builds the services and adds it to the

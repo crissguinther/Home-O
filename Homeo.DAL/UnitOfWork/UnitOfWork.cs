@@ -1,8 +1,9 @@
-﻿using Homeo.Data.Interfaces;
+﻿using Homeo.DAL.Interfaces;
 using Homeo.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Homeo.Data.UnitOfWork {
+namespace Homeo.DAL.UnitOfWork
+{
     public class UnitOfWork : IUnitOfWork {
         private readonly IdentityDataContext _identityContext;
 

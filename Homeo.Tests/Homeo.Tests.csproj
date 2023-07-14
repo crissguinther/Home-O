@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -26,7 +26,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Home.Application\Homeo.Application.csproj" />
     <ProjectReference Include="..\Homeo.Api\Homeo.Api.csproj" />
-    <ProjectReference Include="..\Homeo.Data\Homeo.Data.csproj" />
+    <ProjectReference Include="..\Homeo.DAL\Homeo.DAL.csproj" />
     <ProjectReference Include="..\Homeo.Domain\Homeo.Domain.csproj" />
     <ProjectReference Include="..\Homeo.Identity\Homeo.Identity.csproj" />
   </ItemGroup>

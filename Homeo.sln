@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homeo.Api", "Homeo.Api\Homeo.Api.csproj", "{80B11744-C039-4DE9-A838-746020FAEC33}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homeo.Data", "Homeo.Data\Homeo.Data.csproj", "{3C3ECDDF-261E-45D0-B0CC-C6C1022A7C05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homeo.DAL", "Homeo.DAL\Homeo.DAL.csproj", "{3C3ECDDF-261E-45D0-B0CC-C6C1022A7C05}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homeo.Identity", "Homeo.Identity\Homeo.Identity.csproj", "{DC9707B6-E6BE-4BFD-BCE6-595436FC476F}"
 EndProject

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Homeo.Domain.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Homeo.DTOs.Request {
     public class UserRequestDTO {
@@ -21,7 +22,7 @@ namespace Homeo.DTOs.Request {
 
         [Required(ErrorMessage = "Type of user must be defined")]
         [Range(0, 2, ErrorMessage = "The account type is invalid")]
-        public int AccountType { get; set; }
+        public AccountTypeEnum AccountType { get; set; }
 
         public UserRequestDTO() { }
 
@@ -29,7 +30,7 @@ namespace Homeo.DTOs.Request {
             Name = name;
             Email = email;
             Password = password;
-            AccountType = accountType;
+            AccountType = (AccountTypeEnum) accountType;
         }
     }
 }
